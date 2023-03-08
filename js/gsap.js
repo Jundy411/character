@@ -1,0 +1,31 @@
+gsap.from(".character:nth-child(1)",{
+    opacity:0,
+    duration:1,
+    y:-3000,
+    ease:"power4.inOut"
+});
+gsap.from(".character:nth-child(2)",{
+    opacity:0,
+    duration:1.5,
+    y:-3000,
+    ease:"power4.inOut"
+});
+gsap.from(".character:nth-child(3)",{
+    opacity:0,
+    duration:2,
+    y:-3000,
+    ease: "power4.inOut"
+});
+gsap.from(".character:nth-child(4)",{
+    opacity:0,
+    duration:2.5,
+    y:-3000,
+    ease:"power4.inOut"
+});
+
+gsap.from("nav",{
+    opacity:0,
+    duration:2,
+    delay:3,
+    ease:"power3.inOut"
+})

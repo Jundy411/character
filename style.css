@@ -1,0 +1,128 @@
+*,
+body {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Demi', sans-serif;
+    font-style: italic;
+}
+
+body {
+    background-image: url(./img/background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+    color: white;
+    font-weight: 100;
+    width: 80%;
+    margin: auto;
+    position: relative;
+    top: 10%;
+}
+
+ul {
+    display: flex;
+
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: bold;
+    transition: .4s;
+}
+ul li a:hover{
+    color: #bef264;
+}
+
+.color{
+    color: #bef264;
+}
+
+section {
+    width: 100%;
+    background-color: none;
+    position: relative;
+    top: 80px;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.character {
+    width: 20%;
+    height: 500px;
+    background-color:none;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .5s;
+    position: relative;
+
+}
+
+.character img {
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    transition:.4s;
+    align-items: center;
+    object-fit: cover;
+    filter:grayscale(1);
+    margin:auto;
+    height: 100%;
+}
+.character img:hover{
+    transform: translateY(-15px);
+    filter:grayscale(0);
+}
+
+.character:first-child img{
+    filter: grayscale(0);
+}
+
+.active{
+    filter:grayscale(0);
+    transform:translatey(-15px);
+    background-color:#bef264;
+    color: white;
+}
+.text {
+    width: 100%;
+    margin: auto;
+    background: rgb(36, 28, 28);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 60%);
+    color: white;
+    filter:none;
+    z-index:-2;
+    position: absolute;
+    z-index:10;
+}
+
+.text h4 {
+    text-align: center;
+    font-size: 24px;
+    color:#bef264;
+}
+
+.text p {
+    text-align: center;
+    font-family: 'montserrat';
+    font-size: 10px;
+    padding: 10px;
+}
